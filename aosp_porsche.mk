@@ -13,6 +13,7 @@ $(call inherit-product, device/realme/porsche/device.mk)
 
 # Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 PRODUCT_NAME := aosp_porsche
 PRODUCT_DEVICE := porsche
