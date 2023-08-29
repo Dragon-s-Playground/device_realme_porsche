@@ -11,10 +11,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from porsche device
 $(call inherit-product, device/realme/porsche/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common colt stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_porsche
+# Gapps
+WITH_GAPPS := true
+TARGET_INCLUDE_NGA := true
+
+COLT_BUILD_MAINTAINER := Amrutesh
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+# UDFPS Animations
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Enable Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := colt_porsche
 PRODUCT_DEVICE := porsche
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme

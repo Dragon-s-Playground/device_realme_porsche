@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_porsche.mk
+    $(LOCAL_DIR)/colt_porsche.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_porsche-user \
-    lineage_porsche-userdebug \
-    lineage_porsche-eng
+    colt_porsche-user \
+    colt_porsche-userdebug \
+    colt_porsche-eng
