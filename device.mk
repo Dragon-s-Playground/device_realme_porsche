@@ -36,6 +36,9 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.face.sense_service.camera_id=1
 
+# Call the gapps setup
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service \
