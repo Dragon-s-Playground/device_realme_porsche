@@ -39,6 +39,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Call the gapps setup
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 
+# Gms
+PRODUCT_PACKAGES += \
+    RemovePackagesGms
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service \
